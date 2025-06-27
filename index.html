@@ -12,20 +12,65 @@
       rel="stylesheet"
     />
     <!-- Font awesome -->
-     <script src="https://kit.fontawesome.com/635e002967.js" crossorigin="anonymous"></script>
-     <!-- Tailwind Cdn -->
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-      <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            brand: '#0f172a', // custom color
-          }
-        }
-      }
-    }
-  </script>
+    <script
+      src="https://kit.fontawesome.com/635e002967.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Tailwind Cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: "#0f172a", // custom color
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body></body>
+  <body>
+    <main class="max-screen-xl mx-auto px-16 lg:px-28">
+      <header class="flex gap-6 pt-10 pb-20 ">
+        <!-- Text content -->
+        <div>
+          <h1 class="text-5xl md:text-7xl mb-8">
+            It's good <br />
+            tea time at The <br />
+            Tea House
+          </h1>
+          <p class="text-gray-500 w-3/4 mb-5">
+            Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+            Your Taste Buds.
+          </p>
+          <button
+            class="bg-gradient-to-r from-orange-500 to-red-500 px-5 py-3 rounded-lg font-bold text-white"
+          >
+            Explore More <i class="fa-solid fa-arrow-right -rotate-45 text-xl"></i>
+          </button>
+        </div>
+        <!-- image content -->
+        <div class="relative">
+            <!-- img -->
+            <div>
+                <img class="w-full" src="./images/banner.png" alt="">
+
+            </div>
+            <!-- card -->
+            <div class="absolute  flex items-center bg-white shadow-lg gap-3 px-2 py-2 md:px-10 rounded-lg  top-28 md:top-99 md:left-32 lg:left-28">
+                <!-- icon -->
+                <div> <i class="fa-solid fa-star text-2xl text-amber-500"></i></div>
+                  <!-- text -->
+             <div>
+                <h2 class="lg:text-2xl">5.00</h2>
+                <p class="font-bold text-gray-500">Trust Pilot Rating</p>
+             </div>
+
+            </div>
+           
+        </div>
+      </header>
+    </main>
+  </body>
 </html>
